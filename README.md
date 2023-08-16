@@ -12,6 +12,7 @@ TraverseHub is built using the latest technologies to provide a seamless and eng
 - [ReactJS](https://reactjs.org/): A popular JavaScript library for building user interfaces.
 - [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript that enhances code quality.
 - [Material-UI](https://material-ui.com/): A UI component library for creating responsive and visually appealing designs.
+- React Router
 
 ## App Link
 
