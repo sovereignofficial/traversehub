@@ -2,7 +2,7 @@
 
 ## What is TraverseHub?
 
-TraverseHub is an innovative travel app designed to enhance your journey. It's not just about navigating from one place to another; it's about exploring the world and connecting with fellow travelers. With features that let you save your thoughts about places, access traveler API knowledge, find new destinations through map APIs, and discover the best hotel and car offers, TraverseHub is your ultimate travel companion.
+TraverseHub is an innovative travel social media app designed to enhance your journey. It's not just about navigating from one place to another; it's about exploring the world and connecting with fellow travelers. With features that let you save your thoughts about places, find new destinations through map API, and discover the best hotel and car offers, TraverseHub is your ultimate travel companion.
 
 ## Technology Stack
 
