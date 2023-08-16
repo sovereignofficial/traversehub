@@ -15,7 +15,7 @@ TraverseHub is built using the latest technologies to provide a seamless and eng
 
 ## App Link
 
-You can access TraverseHub by visiting [https://www.traversehub.com](https://www.traversehub.com).
+You can access TraverseHub by visiting [https://traversehub.vercel.app/](https://traversehub.vercel.app/).
 
 ## Setup
 
