@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Paper, Typography } from "@mui/material"
+import { Box, Container, Grid, Paper, Typography, useMediaQuery, useTheme } from "@mui/material"
 import { PageNav } from "../components/PageNav"
 import dummy from '/dummy-app.jpg'
 
@@ -6,10 +6,13 @@ import dummy from '/dummy-app.jpg'
 
 
 export const Product = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
       <Container maxWidth='xl'>
         <PageNav />
-        <Grid container spacing={5} alignItems='center' justifyContent='center' my={5}>
+        <Grid container spacing={5} direction={isMobile ? 'column' : 'row'}
+         alignItems='center' justifyContent='center' my={5}>
           <Grid item xs={4}>
             <Paper square elevation={3} sx={{ padding: 4 }}>
               <Typography variant="h4" my={5} align="center">About <strong style={{color:"#bda85e"}}>TraverseHub</strong></Typography>

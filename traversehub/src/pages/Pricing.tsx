@@ -1,12 +1,14 @@
-import { Container, Typography, Grid, Card, CardHeader, CardContent, Box, CardActions, Button } from "@mui/material"
+import { Container, Typography, Grid, Card, CardHeader, CardContent, Box, CardActions, Button, useTheme, useMediaQuery } from "@mui/material"
 import { PageNav } from "../components/PageNav"
 
 export const Pricing = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
     <Container maxWidth="xl">
       <PageNav />
       <Typography component='h1' variant='h2' align="center" my={8}>Pricing</Typography>
-      <Grid container justifyContent='center' spacing={10}>
+      <Grid container justifyContent='center' spacing={10} direction={isMobile?'column':'row'}>
         <Grid item xs={4}> 
           <Card>
             <CardHeader title="Premium" titleTypographyProps={{align:'center'}} sx={{

@@ -1,22 +1,27 @@
-import { Container, Grid } from "@mui/material"
-import { TraverseFlow } from "../components/TraverseFlow"
-import { TraverseMap } from "../components/TraverseMap"
-import { TraverseMenu } from "../components/TraverseMenu"
+import { Box, Grid, useMediaQuery, useTheme } from "@mui/material"
+import { TraverseMenu } from "../components/traverse/TraverseMenu"
+import { TraverseContent } from "../components/traverse/TraverseContent"
+import { MobileMenu } from "../components/traverse/MobileMenu";
 
 export const Traverse = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
-    <Container maxWidth="xl" sx={{padding:'0px'}}>
-      <Grid container minWidth='xl'>
-        <Grid item xs={2}>
-          <TraverseMenu />
-        </Grid>
-        <Grid item xs={5}>
-          <TraverseFlow />
-        </Grid>
-        <Grid item xs={5}>
-          <TraverseMap />
-        </Grid>
+    <Box>
+      <Grid container direction={isMobile ? 'column' : 'row'}>
+        {
+          isMobile
+            ? (<MobileMenu />)
+            : (
+              <Grid item xs={2}>
+                <TraverseMenu />
+              </Grid>
+            )
+        }
+        <Grid item xs={10}>
+          <TraverseContent />
+        </Grid >
       </Grid>
-    </Container>
+    </Box>
   )
 }

@@ -1,12 +1,14 @@
 import { NavLink } from 'react-router-dom';
-import { AppBar, Toolbar, Box, Button, Grid } from '@mui/material';
+import { AppBar, Toolbar, Box, Button, Grid, useTheme, useMediaQuery } from '@mui/material';
 import { Logo } from './Logo';
 
 export const PageNav = () => {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
     return (
         <AppBar color="transparent" position='static'
             component={'nav'}>
-            <Toolbar>
+            <Toolbar sx={{flexDirection:isMobile?'column':'row'}}>
                 <Box sx={{ flexGrow: 1, maxHeight: "50px" }}>
                     <Logo />
                 </Box>
