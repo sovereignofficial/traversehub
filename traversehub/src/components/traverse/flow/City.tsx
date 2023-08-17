@@ -1,5 +1,5 @@
 import { Box, List, ListItem, Typography } from "@mui/material"
-import { myCities } from "src/utils/traversePages"
+import { myCities } from "../../../utils/traversePages"
 
 
 
