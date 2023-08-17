@@ -39,6 +39,14 @@ const menuItems:traverseMenuItem[] = [
     },
 ]
 
+const myCities = [
+    {country:'DE',city:'Berlin',date:'August 17,2023'},
+    {country:'TR',city:'Antalya',date:'August 17,2023'},
+    {country:'TR',city:'Bodrum',date:'August 17,2023'},
+    {country:'TR',city:'Izmir',date:'August 17,2023'},
+  ]
+
 export {
-    menuItems
+    menuItems,
+    myCities
 }

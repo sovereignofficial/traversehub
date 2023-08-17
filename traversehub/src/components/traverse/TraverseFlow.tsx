@@ -9,6 +9,7 @@ export const TraverseFlow = () => {
     const [value, setValue] = useState('city');
 
     const handleChangeTab = (event: React.SyntheticEvent, tabVal: string) => {
+        console.log(event);
         setValue(tabVal)
     }
     return (
