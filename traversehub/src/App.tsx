@@ -5,6 +5,8 @@ import { Product } from './pages/Product';
 import { PageNotFound } from './pages/PageNotFound';
 import { SignIn } from './pages/SignIn';
 import { Traverse } from './pages/Traverse';
+import { City } from './components/traverse/flow/City';
+import { Country } from './components/traverse/flow/Country';
 
 export const App = () => {
     return (
@@ -13,8 +15,12 @@ export const App = () => {
                 <Route path="/" element={<HomePage />} />
                 <Route path="pricing" element={<Pricing />} />
                 <Route path='product' element={<Product />} />
-                <Route path='login' element={<SignIn/>}/>
-                <Route path="traverse" element={<Traverse/>}/>
+                <Route path='login' element={<SignIn />} />
+                <Route path="traverse" element={<Traverse />}>
+                    <Route index element={<City/>}/>
+                    <Route path='cities' element={<City />} />
+                    <Route path='countries' element={<Country />} />
+                </Route>
                 <Route path='*' element={<PageNotFound />} />
             </Routes>
         </BrowserRouter>
