@@ -1,6 +1,6 @@
 import { BottomNavigation, BottomNavigationAction } from "@mui/material"
 import { menuItems } from "../../utils/traversePages"
-import { traverseMenuItem } from "src/utils/types"
+import { traverseMenuItem } from "../../utils/types.d"
 
 export const MobileMenu = () => {
   return (
