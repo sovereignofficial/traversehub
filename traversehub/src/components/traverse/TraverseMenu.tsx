@@ -2,7 +2,7 @@ import { Box, Button, List, ListItem, styled } from "@mui/material"
 import MuiDrawer from '@mui/material/Drawer';
 import { Logo } from "../Logo"
 import { menuItems } from "../../utils/traversePages";
-import { traverseMenuItem } from "src/utils/types";
+import { traverseMenuItem } from "../../utils/types.d";
 
 const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' })(
     ({ theme, open }) => ({
