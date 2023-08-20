@@ -39,14 +39,27 @@ const menuItems:traverseMenuItem[] = [
     },
 ]
 
-const myCities = [
-    {country:'DE',city:'Berlin',date:'August 17,2023'},
-    {country:'TR',city:'Antalya',date:'August 17,2023'},
-    {country:'TR',city:'Bodrum',date:'August 17,2023'},
-    {country:'TR',city:'Izmir',date:'August 17,2023'},
+
+const myTrips = [
+    {id:1,country:'Deutschland',city:'Berlin',ctCode:'DE',notes:'nice city!',position:{
+        lat:52.520008,
+        lng:13.404954,
+    },date:new Date('2027-10-31T15:59:59.138Z')},
+    {id:2,country:'Turkiye',city:'Antalya',ctCode:'TR',notes:'nice city!',position:{
+        lat:36.884804,
+        lng:30.704044,
+    },date:new Date('2027-10-31T15:59:59.138Z')},
+    {id:3,country:'Turkiye',city:'Bodrum',ctCode:'TR',notes:'nice city!',position:{
+        lat:37.036472,
+        lng:27.425467,
+    },date:new Date('2027-10-31T15:59:59.138Z')},
+    {id:4,country:'Turkiye',city:'Izmir',ctCode:'TR',notes:'nice city!',position:{
+        lat:37.857913,
+        lng:27.261015,
+    },date:new Date('2027-10-31T15:59:59.138Z')},
   ]
 
 export {
     menuItems,
-    myCities
+    myTrips
 }
